@@ -1,0 +1,97 @@
+1.1
+void main()
+{
+	printf_s("Hello world");
+}
+
+
+1.2
+void main()
+{
+	int A;
+	scanf_s("%d", &A);
+}
+
+
+1.3
+void main()
+{
+	int A;
+	scanf_s("%d", &A);
+	printf_s("%d", A);		//// выводим число дл€ проверки
+}
+
+
+1.4
+void main()
+{
+	int A, B;
+	scanf_s("%d%d", &A, &B);
+	printf_s("%d", A+B);
+}
+
+
+1.5
+void main()
+{
+	int A, B;
+	scanf_s("%d%d", &A, &B);
+	printf_s("%d", A*B);
+}
+
+
+1.6
+void main()
+{
+	int A, B;
+	scanf_s("%d%d", &A, &B);
+	printf_s("%d", A%B);
+}
+
+
+1.7
+void main()
+{
+	int A;
+	scanf_s("%d", &A);
+	printf_s("%d h", A / 3600);		//// работает только с кратным 3600 числом секунд, т.е. целым числом часов
+}
+
+
+1.8
+void main()
+{
+	int A;
+	scanf_s("%d", &A);
+	printf_s("%d h", A / 454);		//// в 1 фунте 454 грамма
+}
+
+
+1.9
+void main()
+{
+	int A;
+	scanf_s("%d", &A);
+	printf_s("%d h %d m %d s", A/3600, (A%3600)/60, A%60);		//// выводит в таком пор€дке: часы, минуты, секунды
+}
+
+
+1.10
+void main()
+{
+	int A;
+	scanf_s("%d", &A);
+	printf_s("%d days", A * 365);		//// программа работает с целым числом лет
+}
+
+
+1.11
+void main()
+{
+	int A, B;
+	scanf_s("%d%d", &A, &B);
+	B = A + B;		//// сумма 2 чисел
+	A = B - A;		//// из суммы двух вычитаем первое и получаем второе
+	B = B - A;		//// из суммы вычитает второе и получаем первое
+	printf_s("%d %d", A, B);
+}
